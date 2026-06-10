@@ -189,6 +189,7 @@
             font-weight: bold;
             border: none;
             transition: transform 0.3s ease;
+            cursor: pointer;
 
         }
 
@@ -198,5 +199,13 @@
     </style>
 
 </body>
+<script>
+    document.querySelectorAll('.yu button').forEach(btn => {
+        btn.onclick = function () {
+            let name = this.parentElement.querySelector('.ghgh').innerText;
+            alert('تم شراء: ' + name);
+        }
+    });
+</script>
 
 </html>
